@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html  lang="fa">
+<head>
+    <meta  name="viewport" content="width=device-width"  http-equiv="Content-Type" content="text/html; charset=utf-8  " , initial-scale=1 />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+ body { 
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+      /* -----------------------------------------------------------------*/
+/*
+.header {
+    overflow: hidden;
+    margin: auto;
+    height: 100px;
+    width: 55%;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 16px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header img.logo {
+  font-size: 25px;
+    float: right;
+}
+
+.header a:hover {
+  color: orange;
+}
+    
+
+.header-options {
+   padding-top: 20px;
+  float: right;
+}
+    
+.header-enter a:hover{
+        color: red;
+    }
+.header-enter a{
+        float: left;
+        background-color: gainsboro;
+        color: blue;
+        margin-top: 20px;
+}
+*/
+ .header {
+/*    وسط صفحه*/
+    margin: auto;       
+    height: 100px;
+    width: 55%;
+    padding: 20px 10px;
+}
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 15px;
+/*    برداشتن خط زی لینک*/
+    text-decoration: none;
+    font-size: 14px; 
+    line-height: 25px;
+/*    گرد شدن دور محتوا*/
+    border-radius: 4px;
+    margin-top: 0px;
+  
+}
+    
+/*اطلاعات مربوط به ایکن    */
+.header svg{
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+    }   
+/*    لوگو درمانکده*/
+.header img.logo {
+    font-size: 25px;
+    float: right;
+}
+.header a:hover {
+  color: #fb815e;;
+}
+.header-options {
+   padding-top: 20px;
+  float: right;
+}
+.header-enter a:hover{
+        color: red;
+        
+    }  
+.header-enter{
+        float: left;
+    }
+.header-enter a{
+   
+        background-color: gainsboro;
+        font-size: 18px;
+    width: 110px;
+    height: 50px;
+        color: blue;
+       margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: .25rem!important;
+} 
+.header  .header-enter svg{
+/*      چرخش ۱۸۰ دزجه ایکن*/
+        transform: rotate(180deg);    
+/*      راست چین*/
+        direction: rtl;
+   font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+      float: left;
+      
+    }   
+    
+    /* ---------------------------------------------------------------*/
+    
+    .top-row{
+        
+        width: 55%;
+        height: 25px;
+        background-color: gainsboro;
+        margin: auto
+    }
+    .top-row div{
+        display: inline-block;
+        float: right;
+    
+        
+    }   
+    .top-row a{
+        float: right;
+        direction: rtl;
+        padding-right: 5px;
+        font-size: 14px;
+        text-decoration: none;  
+        padding-top: 2px;
+    }
+    .top-row p{
+        
+        font-size: 10px;
+        margin-top: 4px;
+        padding-right: 5px;
+/*        float: right;*/
+        
+/*    float: left;*/
+    }
+    
+    /* ---------------------------------------------------------------*/
+    
+    .blue-box{
+        width: 55%;
+        height: 110px;
+        border-radius: 10px;
+        background-color: dodgerblue;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .blue-box .con1{
+        width: 90%;
+        height: 50%;
+/*        background-color: red;*/
+        float: right;
+        margin-right: 20px;
+    }
+    .blue-box .con1 p{
+        direction: rtl;
+        text-align: right;
+        color: white;
+        font-size: 26px;
+        margin-top: 15px;
+     font-weight: 600!important;
+    }
+    .blue-box .con2{
+         width: 90%;
+        height: 50%;
+        float: right;
+        padding-right: 20px;
+    }
+    .blue-box .con2 p{
+        direction: rtl;
+        color: white;
+        font-size: 14px;
+        text-align: right;
+        
+    }
+    
+    
+    /* ---------------------------------------------------------------*/
+    
+    .second-part{
+        width: 55%;
+        height: 1800px;
+/*        background-color: rebeccapurple;*/
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }   
+    .second-part div{
+        display: inline-block;
+    }   
+    .second-part .right{
+        float: right;
+        height: auto;
+        width: 28%;
+/*        background-color: gold;*/
+        padding-left: 20px;
+    }
+    .second-part .left{
+        float: left;
+/*        background-color: blue;*/
+        width: 72%;
+        /*height: auto;*/
+        height: 1800px;
+    }  
+    .second-part .right .pic{
+        width: 98%;
+        height: auto;
+        margin: auto;
+        
+    }
+    .second-part .right .pic img{
+         width: 100%;
+        height: auto;
+    }
+    .second-part .right .search{
+        width: 98%;
+        height: 140px;
+        border: 1px solid gray;
+        border-radius: 6px;
+        margin: auto;
+    }
+    .second-part .right .search .text{
+      
+        margin: auto;
+          width: 80%;
+        height: 40%;
+/*        background-color: red;*/
+        margin-left: 22px;
+        border-bottom: 1px solid gray;
+    }
+    .second-part .right .search .text p{
+        direction: rtl;
+    }
+    .second-part .right .search .bar{
+        height: 60%;
+        width: 80%;
+        margin: auto;
+         margin-left: 22px;
+    }
+    .second-part .right .search .bar div{
+        display: inline-block;
+    }
+    .second-part .right .search .bar .name{
+        width: 87%;
+        height: 70%;
+        padding-right: 5px;
+    }
+    .second-part .right .search .bar .icon{
+        margin-top: 0px;
+           width: 13%;
+        height: 70%;
+        background-color: white;
+        border: none;
+        float: right;
+    } 
+    .second-part .right .search .bar input[type=text]{
+        direction: rtl;
+        width: 100%;
+        height: 100%;
+        border: none;
+        font-size: 10px;
+        float: left
+    }
+    .second-part .right .search .bar i{
+        border: none;
+       width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+    
+        /* ---------------------------------------------------------------*/
+    
+    .second-part .left .sort{
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        border: 1px solid gray;
+        border-radius: 5px;
+        
+    }
+    .second-part .left .sort div{
+        display: inline-block;
+    }
+    .second-part .left .sort .icon{
+        width: 20px;
+        font-size: 20px;
+        margin-left: 10px;
+        height: auto;
+/*        background-color: rebeccapurple;*/
+        float: right;
+        margin-bottom: 0px;
+        margin-top: 10px;   
+        margin-right: 10px;
+    }
+    .second-part .left .sort .text{
+        width: 140px;
+        height: 30px;
+        float: right;
+        margin-top: 8px;
+    }
+    .second-part .left .sort .text p{
+        direction: rtl;
+        float: right;
+        font-size: 14px;
+        color: black;
+        margin-top: 2px;
+    }
+    .second-part .left .sort .butt{
+        width: 120px;
+        height: 25px;
+        background-color: rebeccapurple;
+        margin-right: 30px;
+        float: right;
+        margin-top: 10px;
+    
+    }
+    .second-part .left .sort button[type=submit]{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        color: #6e7794;
+        border: none;
+  
+    }
+    .second-part .left .sort button[type=submit]:focus{
+        background-color: cornflowerblue;
+        color:  #fff;;
+        border-color: cornflowerblue;
+    }
+    .second-part .left .doctor{
+        width: 100%;
+        height: 210px;
+        border: 1px gray solid;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .second-part .left .doctor:hover{
+        border: 1px orange solid;
+    }
+    .second-part .left .doctor div{
+        display: inline-block;
+    }
+    .second-part .left .doctor .pic{
+        float: right;
+        height: 100%;
+        width: 15%;
+/*        background-color: aqua;*/
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    .second-part .left .doctor .pic img{
+        width: 90px;
+        height: 90px;
+        float: right;
+    }
+    .second-part .left .doctor .center{
+        padding-top: 0px;
+        padding-right: 2px;
+        height: 100%;
+        width: 50%;
+
+        float: right;
+    }
+    .second-part .left .doctor .center h4{
+        float: right;
+        text-align: right;
+        margin-bottom: -5px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .second-part .left .doctor .center p{
+        float: right;
+        text-align: right;
+        width: 100%;
+        font-size: 14px;
+    }
+    .second-part .left .doctor .center .star{
+        margin-top: 10px;
+        width: 100%;
+        height: 20px;
+
+        padding-right: 10px;
+    }
+    .second-part .left .doctor .center .star i{
+        
+        float: right;
+        color: dodgerblue;
+        margin-right: 3px;
+        font-size: 13px;
+    }
+    .second-part .left .doctor .center .star .comment{
+        font-size: 10px;
+        width: 40px;
+        direction: rtl;
+        margin-right: 5px;
+        margin-top: 2px;
+        color: gray;
+    }
+    .second-part .left .doctor .center .bottom{
+        width: 100%;
+        height: 100px;
+        padding-right: 2px;
+    }
+    .second-part .left .doctor .center .bottom p{
+        text-align: right;
+        direction: rtl;
+    } 
+    .second-part .left .doctor .left-part{
+        height: 100%;
+        width: 35%;
+       
+    }
+    .second-part .left .doctor .left-part .blue{
+        width: 90%;
+        height: 48%;
+        margin: auto;
+        border-radius: 5px;
+        background-color: lightblue;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .second-part .left .doctor .left-part .blue .line{
+        
+        width: 100%;
+        height: 20px;
+    
+        margin-top: 7px;
+           padding-right: 5px;
+         text-align: right;
+    }
+    .second-part .left .doctor .left-part .blue .line p{
+       float: right;
+        font-size: 12px;
+        width: 200px;
+        margin-top: 0px;
+        direction: rtl;
+        margin-right: 10px;
+    }
+    .second-part .left .doctor .left-part .blue .line i{
+        
+        margin-left: 10px;
+    }
+    .second-part .left .doctor .left-part .cont{
+        width: 100%;
+          height: 36px;
+         float: right;
+    }
+     .second-part .left .doctor .left-part .cont button[type=submit]{
+         margin-right: 15px;
+         padding-left: 20px;
+         direction: rtl;
+         border-radius: 10px;
+        
+            float: right;
+   
+/*         width: 100%;*/
+         height: 100%;
+            width: 70%;
+         padding: 10px;
+/*        height: 36px;*/
+        margin-top: 20px;
+         background-color: #F5AE9A;
+         color: white;
+         font-size: 12px;
+         cursor: pointer;
+         border: none;
+         text-align: right;     
+    } 
+    .second-part .left .doctor .left-part  i {
+        float: right;
+        font-size: 14px;
+        margin-right: 10px;
+        margin-left: 30px;
+
+    }
+   .second-part .left .doctor .left-part .cont .button_slide {
+       color: #FFF;
+       border: 2px solid rgb(216, 2, 134);
+       border-radius: 20px;
+       padding: 18px 36px;
+       display: inline-block;
+       font-size: 14px;
+       letter-spacing: 1px;
+       cursor: pointer;
+       box-shadow: inset 120px 0 0 0 #fb815e;
+       -webkit-transition: ease-out 0.4s;
+       -moz-transition: ease-out 0.4s;
+       transition: ease-out 2s; 
+}
+ .second-part .left .doctor .left-part .cont .slide_left:hover {
+       box-shadow: inset -2px 0 0 0 #fb815e;   
+    } 
+           /* ---------------------------------------------------------------*/
+    
+     .download .container .social-media {
+        height: 60px;
+        width: 200px;
+        margin: auto;
+         margin-top: 40px;
+         
+        
+    }
+    .second-part .left .doctor .left-part .cont .heart{
+        padding-top: 5px;
+        
+        
+        width: 35px;
+        height: 35px;
+        float: right;
+        margin-top: 20px;
+        margin-right: 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+/*        background-color: red;*/
+    
+    }
+    .second-part .left .doctor .left-part .cont .heart i{
+        margin-top: 2px;
+        font-size: 20px;
+        margin-right: 6px;
+        color: dodgerblue;
+    }
+    .second-part .left .doctor .left-part .cont .turn-time{
+        width: 85%;
+        margin: auto;
+        height: 30px;
+/*        background-color: rebeccapurple;*/
+        margin-top: 10px;
+        margin-left: 20px;
+        padding-right: 10px;
+    }
+    .second-part .left .doctor .left-part .cont .turn-time p{
+        direction: rtl;
+        float: right;
+        color: green;
+        font-size: 10px;
+        
+    }
+    
+           /* ---------------------------------------------------------------*/
+    .third{
+
+        height: 240px;
+        width: 55%;
+        border-radius: 10px;
+        background-color: lightblue;
+        margin: auto;
+        margin-bottom: 50px;
+        padding-right: 30px;
+    }
+    .third .titr{
+        width: 100%;
+        float: right;
+        text-align: right;
+        height: 50px;
+        margin-bottom: 30px;
+    }
+    .third .titr h4{
+        direction: rtl;
+        float: right;
+         text-align: right;
+    }
+    .third .txt{
+        width: 100%;
+        height: 180px;
+    
+    }
+    .third .txt p{
+        direction: rtl;
+        float: right;
+        font-size: 14px;
+        
+    }
+    .third .bottom{
+        width: 100%;
+        height: 50px;
+
+        
+    }
+    .third .bottom button[type=submit]{
+        width: 110px;
+        margin-top: 10px;
+        margin-left: 70px;
+        height: 30px;
+        text-align: right;
+        border: none;
+        border-radius: 8px;
+        background-color: darkorange;
+    }
+    .third .bottom i{
+        margin-right: 10px;
+    }
+    
+    
+           /* ---------------------------------------------------------------*/
+    .fourth {
+        
+        width: 55%;
+        height: 230px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 400px;
+        padding-top: 30px;
+    }
+    .fourth .titr{
+         width: 100%;
+         height: 30px;
+/*             background-color: red;*/
+
+    }
+    .fourth .titr h4{
+        width: 100%;
+        text-align: right;
+        float: right;
+       
+        margin-right: 20px;
+        margin-top: 0px;
+
+    }
+    .fourth .q{
+        width: 95%;
+        margin: auto;
+        height: 30px;
+/*        background-color: aqua;*/
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-bottom: solid gray 1px;
+    }
+    .fourth .q .plus{
+        padding-right: 10px;
+        align-content: center;
+        float: right;
+        width: 23px;
+        height: 23px;
+        border-radius: 5px  0px 5px 5px;
+        background-color: blue;
+        margin-top: 5px;
+/*        margin-right: 10px; */
+    }
+    .fourth .q .plus i{
+        color: white;
+        font-size: 13px; 
+           margin-left: 5px;
+      
+    }
+    .fourth .q .star{
+        
+         float: right;
+        width: 23px;
+        height: 23px;
+/*        background-color: blue;*/
+        margin-top: 5px;
+/*        margin-right: 5px; */
+        
+        
+    }
+    .fourth .q .star i{
+        color: gold;
+        margin-right: 10px;
+/*        border: black solid 1px;*/
+    }
+    .fourth .q p{
+        direction: rtl;
+        float: right;
+        color: black;
+        font-size: 14px;
+        margin-top: 3px;
+        margin-right: 10px;
+    }
+    
+      /* ---------------------------------------------------------------*/
+     .crona-box{
+        background-image: url("cronaBackground.png");
+        width: 100%;
+        height: 500px;
+    }
+    .crona-box h5{
+        padding-top: 28px;
+        padding-right: 10px;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+                margin-bottom: 20px;
+        
+    }    
+    .crona-box .data {
+/*        background-color: aqua;*/
+        width: 36%;
+        margin: auto;
+        height: 450px;
+        text-align: right;
+
+        
+   
+    }
+    .crona-box .data .pics{
+        
+        margin: auto;
+        width: 88%;
+        height: 140px;
+/*        background-color: rebeccapurple;*/
+        margin-bottom: 10px;
+    }
+    .crona-box .data .pics div{
+        display: inline-block;
+    }
+    .crona-box .data .pics .pic1{
+        width: 280px;
+        float: right;   
+        height: 150px;
+    }
+        .crona-box .data .pics .pic2{
+        width: 280px;
+        float: left;     
+        height: 150px;
+
+    }
+    .crona-box .data .pics .pic1 img{
+          width: 250px;
+        height: 140px;
+        float: right;
+       
+    }
+      .crona-box .data .pics .pic2 img{
+          width: 250px;
+        height: 140px;
+           float: left;
+    }
+      /* ---------------------------------------------------------------*/
+    .crona-box .data  .containers div{
+        display: inline-block;
+    }
+      .crona-box .data .containers{
+        width: 88%;
+        margin: auto;
+        height: 280px;
+/*        background-color: rebeccapurple;*/
+          
+          
+    }    
+      .crona-box .data .containers .container{
+
+        width: 45%;
+        height: 280px;
+/*        background-color: red;*/
+          height: 100%;
+
+          
+    }
+    .crona-box .data .containers  .cont1{
+        float: left;
+    }
+    .crona-box .data .containers img{
+        height: 230px;
+        margin-left: 80px;
+        
+      
+    }
+     .crona-box .data .container h3{
+       color: white;
+         float: right;
+         padding-right: 20px;
+         font-size: 16px;
+           direction: rtl;
+         text-align: right;
+         height: 2px;
+      
+    }
+    .crona-box .data .container .button{
+        width: 80%;
+        height: 50px;   
+        margin: auto;
+        margin-right: 30px;
+           font-size: 18px;
+    }
+     .crona-box .data .container .button button[type=submit]{
+        margin-right: 15px;
+        border-radius: 10px;
+        border: 1px solid;
+        border-color: #fb815e;
+        width: 94%;
+        background-color: #fb815e;
+        height: 50px;   
+        color: white;
+        padding-top: 10px;
+        text-align: center;
+         direction: rtl;
+         
+        font-size: 16px;
+    }
+      .crona-box .data .container .button button[type=submit]:hover{
+          background-color: darkorange;
+    }   
+    .crona-box .data .container p{
+         direction: rtl;
+         color: white;
+         float: right;
+         padding-right: 20px;
+         
+      
+    }
+   
+          /* ---------------------------------------------------------------*/
+    
+    
+     .download {
+        margin: auto;
+        margin-top:80px;
+        width: 55%;
+        margin-bottom: 100px;
+        height: 450px;
+    
+    }
+    .download .container{
+
+        margin-top: 40px;
+         float: left;
+        width: 50%;
+        height: 450px;
+        margin: auto;
+
+    }
+    .download .container img{
+        height: 300px;
+        float: right;
+        margin-right: 50px;
+        width: 75%;
+    }
+      .download .container h2{
+          font-size: 16px!important;
+          color: #3b4157;
+          padding-top: 40px;
+       direction: rtl;
+    }
+     .download .container p{
+         color: #3b4157;
+       direction: rtl;
+    }
+    .download .container input[type=text]{
+        border-radius: 8px 8px 8px 8px;
+        padding: 10px;
+        font-size: 13px;
+        border: 1px solid grey;
+        float: right;
+        width: 40%;
+        background: #f1f1f1;
+        direction: rtl;
+        margin-top: 20px;
+        height: 40px;
+        margin-right: 40px;
+    }
+      .download .container button[type=submit]{
+          margin-right: 15px;
+         direction: rtl;
+         border-radius: 10px; 
+         float: right;
+         height: 40px;
+         width: 140px;
+          margin-top: 20px;
+         background-color: #F5AE9A;
+         color: white;
+         font-size: 12px;
+         cursor: pointer;
+         border: none;
+         text-align: center;  
+/*          color: pink;*/
+          
+    }   
+    .download .container  i{
+        
+        float: right;
+        padding-right: -30px;
+        font-size: 14px;
+        margin-right: 10px;
+        margin-left: 30px;
+    }
+  .download .container .on_slide {
+         color: #FFF;
+       border: 2px solid rgb(216, 2, 134);
+       border-radius: 20px;
+/*       padding: 18px 36px;*/
+       display: inline-block;
+       font-size: 14px;
+       letter-spacing: 1px;
+/*      float: left;*/
+       cursor: pointer;
+       box-shadow: inset 100px 0 0 0 #fb815e;
+       -webkit-transition: ease-out 0.4s;
+       -moz-transition: ease-out 0.4s;
+       transition: ease-out 2s; 
+      
+}
+   .download .container .slide_left:hover {
+       box-shadow: inset 0px 0 0 0 #fb815e;   
+    }
+     .download .container .social-media {
+        height: 60px;
+       
+        width: 200px;
+        
+        margin: auto;
+         margin-top: 40px;
+         
+        
+    }
+    .download .container .social-media img{
+        height: 40px;
+       
+        width: 40px;
+        padding-top: 10px;
+        margin-right: 10px;
+        
+    }
+    
+    
+ </style>
+     </head>
+<body>
+    
+<div class="header">
+    
+ 
+    
+    <img class="logo" src="darmankade.svg" alt="Girl in a jacket">
+    <div class="header-options">
+        <a  href="#home">مجله پزشکی<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="dr-menu__icon feather feather-book" data-v-49015c94=""><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" data-v-49015c94=""></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" data-v-49015c94=""></path></svg></a>
+        <a href="#contact">مشاور انلاین<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-0 dr-menu__icon feather feather-wifi" data-v-49015c94=""><path d="M5 12.55a11 11 0 0 1 14.08 0" data-v-49015c94=""></path><path d="M1.42 9a16 16 0 0 1 21.16 0" data-v-49015c94=""></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0" data-v-49015c94=""></path><line x1="12" y1="20" x2="12" y2="20" data-v-49015c94=""></line></svg></a>
+        <a href="#contact">عضویت پزشکان<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="dr-menu__icon feather feather-user-plus" data-v-49015c94=""><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" data-v-49015c94=""></path><circle cx="8.5" cy="7" r="4" data-v-49015c94=""></circle><line x1="20" y1="8" x2="20" y2="14" data-v-49015c94=""></line><line x1="23" y1="11" x2="17" y2="11" data-v-49015c94=""></line></svg></a>
+        <a href="#contact">کرونا سازمانی<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="dr-menu__icon feather feather-box" data-v-49015c94=""><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" data-v-49015c94=""></path><polyline points="3.27 6.96 12 12.01 20.73 6.96" data-v-49015c94=""></polyline><line x1="12" y1="22.08" x2="12" y2="12" data-v-49015c94=""></line></svg></a>
+        <a href="#contact">لیست تخصص ها <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-0 dr-menu__icon feather feather-align-justify" data-v-49015c94=""><line x1="21" y1="10" x2="3" y2="10" data-v-49015c94=""></line><line x1="21" y1="6" x2="3" y2="6" data-v-49015c94=""></line><line x1="21" y1="14" x2="3" y2="14" data-v-49015c94=""></line><line x1="21" y1="18" x2="3" y2="18" data-v-49015c94=""></line></svg></a>
+    </div>
+    <div class="header-enter">
+            <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flip-horizontal feather feather-log-in" data-v-0fb0a4cb=""><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" data-v-0fb0a4cb=""></path><polyline points="10 17 15 12 10 7" data-v-0fb0a4cb=""></polyline><line x1="15" y1="12" x2="3" y2="12" data-v-0fb0a4cb=""></line></svg> ورود </a>
+    </div>
+</div>
+
+<div class="top-row">
+    <div>
+        <a href="#">درمانکده ></a>
+    </div>
+    <div>
+    <p> متخصص مغز و اعصاب(نورولوژی)</p>
+        </div>
+</div>
+    
+<div class="blue-box">
+    <div class="con1">
+    <p>لیست بهترین متخصص مغز و اعصاب(نورولوژی) برای مشاوره آنلاین و حضوری</p>
+    </div>
+    <div class="con2">
+     <p>ویزیت حضوری و مشاوره آنلاین (تصویری، صوتی و متنی) با بهترین پزشکان متخصص مغز و اعصاب(نورولوژی) در تهران</p>
+    </div>
+</div>
+    
+<div class="second-part">
+     <div class="right">
+        <div class="pic">
+            <img src="pic.png" alt="pic">
+        </div>
+        <div class="search">
+            <div class="text">
+                <p>جستجو در نتایج</p>
+            </div>
+            <div class="bar">
+                <div class="name">
+                  <input type="text" placeholder="نام و نام خانوادگی پزشک را بنویسید" name="search">
+                    </div>
+                <div class="icon">
+                    <i class="fa fa-search" style="color: gray" ></i>
+                    </div>
+            </div>
+        </div>
+    </div>
+     <div class="left">
+        <div class="sort">
+            <div class=icon>
+                 <i class="fa fa-search" style="color: gray" ></i>
+            </div>
+            <div class="text">
+                <p> مرتب سازی براساس :</p>
+            </div>
+            <div class="butt">
+                  <button type="submit">منتخب</button>
+            </div>
+            <div class="butt">
+              <button type="submit" onclick="sortFunc()">بیشترین رضایتمندی</button>
+            </div>
+<!--             onclick="sortFunc()"-->
+
+            <div class="butt">
+              <button type="submit">زودترین نوبت</button>
+            </div>
+        </div>
+        <div id="doctors">
+            <div class="doctor" id="1">
+                 <div class="pic">
+                    <span id="pic0"></span>
+<!--                <img class="logo" src="doctor.png" alt="doctor" >-->
+                  </div>
+                 <div class="center">
+                       <h4><span id="name0"></span></h4>
+                       <p><span id="spec0"></span></p>
+                         <div class="star">
+                     <span id="stars0"></span>
+                    <p class="comment">(<span id="comment0"></span> نظر)</p>
+                </div>
+                <div class="bottom">
+
+                  <p><span id="comment-text0"></span></p>
+
+                </div>
+            </div>
+                 <div class="left-part">
+                     <div class="blue">
+                     <div class="line">
+                         <p><i class="fa fa-rss"></i><span id="location0"></span></p>
+                    </div>
+                      <div class="line">
+                      <p><i class="fa fa-rss"></i>تجربه کاری <span id="experience_years0"></span> سال</p>
+                </div>
+                     <div class="line">
+                    <p><i class="fa fa-rss"></i><span id="user_percent0"></span> درصد رضایت کاربران</p>
+                </div>
+                </div>
+                      <div class="cont">
+                          <button class="button_slide slide_left" type="submit" > ارسال لینک <i class="fa fa-home"></i></button>
+                         <div class="heart"> <i class="fa fa-heart-o"></i>
+                        </div>
+                         <div class="turn-time">
+                            <p> اولین نوبت خالی <span id="firstTime0"></span></p>
+                        </div>
+                     </div>
+
+            </div>
+
+             </div>
+
+        </div>
+     </div>
+</div>
+    
+ 
+<div class="third">
+    <div class="titr">
+            <h4>هر آنچه که باید از </h4>
+            <h4 style="color: blue">متخصص مغز و اعصاب (نورولوژی )  </h4>
+            <h4>بدانید  ! </h4>
+    </div>
+    <div class="txt">
+        
+        <p>       
+    سیستم عصبی انسان به دو دسته‌ی کلی اعصاب مرکزی (مغز و نخاع) و اعصاب محیطی (اعصاب و نورون‌های عضلات) تقسیم می‌شود.<br><br> تمام بیماری‌هایی که هر یک از این قسمت‌ها را درگیر کند، توسط پزشک متخصص مغز و اعصاب درمان می‌شوند.
+
+پزشک مغز و اعصاب بیماریهایی از قبیل انواع سرد
+
+       </p>
+
+
+    </div>
+     
+    <div class="bottom">
+         <button type="submit"> <i class="fa fa-star"></i>بیشتر بخوانید</button>
+    </div>
+
+
+
+</div>
+    
+<div class="fourth">
+    <div class="titr">
+        <h4>متخصص مغز و اعصاب(نورولوژی)</h4>
+    </div>
+    <div class="q">
+        <div class="plus">
+            <i class="fa fa-search" ></i>
+        </div>
+        <div class="star">
+             <i class="fa fa-star" ></i>
+        </div>
+        <p>بیماران چه زمانی باید به متخصص مغز و اعصاب یا جراح مغز و اعصاب و یا به روانپزشک مراجعه کنند؟</p>     
+        
+    </div>
+    
+      <div class="q">
+        <div class="plus">
+            <i class="fa fa-search" ></i>
+        </div>
+        <div class="star">
+             <i class="fa fa-star" ></i>
+        </div>
+        <p>سردرد ها چند دسته هستند و راه های درمان آن چیست؟</p>     
+    </div>
+    
+     <div class="q">
+        <div class="plus">
+            <i class="fa fa-search" ></i>
+        </div>
+        <div class="star">
+             <i class="fa fa-star" ></i>
+        </div>
+        <p>رعایت کردن چه نکاتی باعث کاهش سردرد ها به خصوص سردرد های میگرنی میشود؟</p>     
+        
+    </div>
+</div>
+    
+        
+<div class="crona-box">
+    <h5 class="titr">نگران کرونا نباشید</h5>
+    <div class="data">
+          <div class="pics">
+              <div class="pic1">
+                <img src="doctor1.png" alt="doctor1">
+              </div>
+            <div class="pic2">
+                  <img src="doctor2.png" alt="doctor2">
+            </div>
+        </div>
+        
+        <div class="containers">
+        <div class="container cont1">
+            <h3>مشاوره آنلاین فوری</h3>
+            <p>با تست آنلاین کرونا علائم خود را بررسی کنید و اگر مشکوک بودید میتوانید به صورت فوری با پزشکان عمومی مشاوره آنلاین داشته باشید.<br><br></p>
+            <div class="button">
+                
+                
+                <button type="submit">درخواست آزمایش ></button>
+<!--                <p>درخواست آزمایش ></p>-->
+            </div>
+         </div>
+        <div class="container cont2">
+<!--            <img src="doctor2.png" alt="doctor2">-->
+              <h3>تست PCR و آنتی بادی در محل</h3>
+            <p>اگر در شهرهای تهران، مشهد، اصفهان، کرج، شیراز و اهواز هستید، می‌توانید بدون مراجعه به آزمایشگاه و در محل مدنظر خود آزمایش کرونا بدهید.
+            </p>
+          <div class="button">
+               
+                <button type="submit">درخواست مشاوره فوری ></button>
+<!--                <p>درخواست مشاوره فوری ></p>-->
+            </div>
+         </div>
+             </div>
+    </div>
+</div>
+    
+    
+<div class="download">
+    <div class="container">
+        <h2>
+            دانلود اپلیکیشن درمانکده
+        </h2>
+        <p>
+            با اپلیکیشن درمانکده با پزشکان و روانشناسان آنلاین مشاوره کنید یا <br>
+            برای ویزیت حضوری آنلاین نوبت بگیرید.
+        </p>
+         <h2>
+    برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.
+        </h2>
+        
+            <input  type="text" id="fname" name="fname" placeholder="مانند *******۰۹۱۲">
+<!--            <input class="button_slide slide_left" type="submit" value="ارسال لینک" >-->
+            <button class="on_slide slide_left" type="submit" > ارسال لینک <i class="fa fa-home"></i></button>
+    </div>
+    <div class="container">
+        <img src="download.png" alt="download">
+        <div class="social-media">
+             <a href="#contact"><img  src="insta.png" alt="insta"></a>
+             <a href="#contact"><img  src="bazar.png" alt="bazar"></a>
+            <a href="#contact"><img  src="apple.png" alt="apple"></a>
+        </div>  
+    </div>
+</div>
+   
+
+    
+    
+    
+<script>
+
+    function httpGet(theUrl)  // متد برای درخواست گت
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+        xmlHttp.send( null );
+        return xmlHttp.responseText;
+    }
+    var DoctorsList
+    if (localStorage.getItem('search') == 'false') {
+        var specId = localStorage.getItem('specId');
+        DoctorsList = httpGet("http://localhost:8080/rest/get-all-doctors/" + specId);
+    }
+    else {
+
+        var namePart = localStorage.getItem('searchInput');
+        localStorage.setItem('search' ,'false')
+        DoctorsList = httpGet("http://localhost:8080/rest/get-searched-doctors/" + namePart);
+    }
+    var obj = JSON.parse(DoctorsList);
+    if (obj.length ==0 ){
+        document.getElementById('1').style.display = 'none';
+
+    }
+
+    function multiplyNode(node, count, deep) {
+        for (var i = 0, copy; i < count - 1; i++) {
+            copy = node.cloneNode(deep);
+            document.getElementById("doctors").appendChild(copy);
+            copy.id = i+2;
+            copy.id = obj[i+1].id;
+            copy.children[0].children[0].id = "pic" + JSON.stringify(i+1);
+            copy.children[1].children[0].children[0].id = "name" + JSON.stringify(i+1);
+            copy.children[1].children[1].children[0].id = "spec" + JSON.stringify(i+1);
+            copy.children[1].children[2].children[0].id = "stars" + JSON.stringify(i+1);
+            copy.children[1].children[2].children[1].children[0].id = "comment" + JSON.stringify(i+1);
+            copy.children[1].children[3].children[0].children[0].id = "comment-text" + JSON.stringify(i+1);
+            copy.children[2].children[0].children[0].children[0].children[1].id = "location" + JSON.stringify(i+1);
+            copy.children[2].children[0].children[1].children[0].children[1].id = "experience_years" + JSON.stringify(i+1);
+            copy.children[2].children[0].children[2].children[0].children[1].id = "user_percent" + JSON.stringify(i+1);
+            copy.children[2].children[1].children[2].children[0].children[0].id = "firstTime" + JSON.stringify(i+1);
+
+        }
+        node.id = obj[0].id;
+    }
+
+    multiplyNode(document.querySelector('.second-part .left .doctor'), obj.length, true);
+
+// let doctors= httpGet("https://intense-ravine-40625.herokuapp.com/doctors");
+//      var obj = JSON.parse(testDoctors);
+     for (var k = 0 ; k < obj.length ; k++){
+         putVars("name" + k,"spec" + k,"comment" + k ,"comment-text" + k , "location"+ k,"experience_years" +k ,"user_percent" + k,"firstTime"+k,"stars" + k , k ,"pic" + k);
+     }
+    function putVars(name , spec , comment , commentText , location ,experience_years,user_percent,firstTime,stars , id ,pic){
+    document.getElementById(name).innerHTML =obj[id].name;
+    document.getElementById(spec).innerHTML =obj[id].spec;
+    document.getElementById(comment).innerHTML =obj[id].comments;
+    document.getElementById(commentText).innerHTML =obj[id].comment_text;
+    document.getElementById(location).innerHTML = obj[id].location;
+    document.getElementById(experience_years).innerHTML =obj[id].experience_years;
+    document.getElementById(user_percent).innerHTML =obj[id].user_percent;
+    document.getElementById(firstTime).innerHTML =obj[id].first_empty_date;
+    let avatar = obj[id].avatar;
+    document.getElementById(pic).innerHTML = '<img class="logo" src='+ avatar +' alt="doctor">';// '<img src=" alt="alternatetext">';
+
+    switch(obj[id].stars) {
+        case 1:
+            document.getElementById(stars).innerHTML ='<i class="fa fa-star"></i>';
+            break;
+        case 2:
+            document.getElementById(stars).innerHTML = '<i class="fa fa-star"></i><i class="fa fa-star"></i>';
+            break;
+        case 3:
+            document.getElementById(stars).innerHTML = '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>';
+            break;
+        case 4:
+            document.getElementById(stars).innerHTML = '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>';
+            break;
+        case 5:
+            document.getElementById(stars).innerHTML = '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>';
+            break;
+        }
+    }
+    
+    ///  مرتب کردن بر اساس رضایت
+
+  
+    function sortFunc(){
+        var toSort = document.getElementById('doctors').children;
+   
+        toSort = Array.prototype.slice.call(toSort, 0);
+    
+        toSort.sort(function(a, b) {
+            var aord =  obj[a.id].user_percent;//a.id;//
+            var bord =  obj[b.id].user_percent;// b.id; //
+            if(aord <= bord)
+                return -2;
+            if(aord > bord)
+                return +1;
+        });
+
+        var parent = document.getElementById('doctors');
+        parent.innerHTML = "";
+        for(var i = 0, l = toSort.length; i < l; i++) {
+            parent.appendChild(toSort[i]);
+        }
+    }
+
+    
+//    const init = function(e){
+//     var pages = []
+    var nodes=  document.getElementById("doctors").children;
+    for (var y =0 ; y < nodes.length ; y++){
+        var tmp= nodes[y];
+        var tmpId= JSON.stringify(tmp.id);
+        // pages.push(document.getElementById(obj[y].id));
+        tmp.addEventListener('click' ,   function(){
+            localStorage.setItem('userId',this.id);
+            window.open('http://localhost:8080/drPage.html', '_self');
+            // window.document.location = 'drPage.html';
+        });
+    }
+      //   let page1 = document.getElementById("1");
+      //   let page2 = document.getElementById("2");
+      //   let page3 = document.getElementById("3");
+      //
+      //   page1.addEventListener('click' ,   function(){
+      //          localStorage.setItem('userId' ,"1");
+      //       window.document.location = 'drPage.html';
+      //   });
+      //   page2.addEventListener('click' ,   function(){
+      //          localStorage.setItem('userId' ,"2");
+      //       window.document.location = 'drPage.html';
+      //   });
+      //
+      // page3.addEventListener('click' ,   function(){
+      //          localStorage.setItem('userId' ,"3");
+      //       window.document.location = 'drPage.html';
+      //   });
+
+
+
+</script>
+</body>
+    
+    
+
+</html>

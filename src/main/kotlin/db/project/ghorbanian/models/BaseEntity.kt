@@ -1,20 +1,41 @@
 package db.project.ghorbanian.models
 
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
-import javax.persistence.MappedSuperclass
+import com.fasterxml.jackson.annotation.JsonIgnore
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
+import javax.persistence.*
+import java.io.Serializable
 
 /**
  * Base super class for other entities. It provides a [id] for entities.
  */
+//@MappedSuperclass
+//open class BaseEntity {
+//
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    var id: Long =-1L
+//}
 @MappedSuperclass
-open class BaseEntity {
+@JsonIgnoreProperties(ignoreUnknown = true)
+//@Immutable
+abstract class BaseEntity : Serializable{
 
     @Id
+    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long? = null
+    @Basic(optional = false)
+    var dbId = -1L
+
+
 
     val isPersisted: Boolean
-        get() = id != null
+        @JsonIgnore
+        get() = dbId > 0L
+
+//    abstract fun generateOldKey(): String
+
+    companion object {
+
+        private const val serialVersionUID = 1L
+    }
 }

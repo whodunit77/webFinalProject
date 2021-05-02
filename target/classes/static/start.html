@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <input onclick="start_patient()" type="submit" value="start_patient">
+    <input onclick="start_doctor()" type="submit" value="start_doctor">
+    
+</body>
+
+<script>
+   function start_patient(){
+       window.open('http://localhost:8080/patientForm.html', '_self');
+
+   }
+   
+   function start_doctor() {
+
+
+
+       window.open('http://localhost:8080/doctorForm.html', '_self');
+   }
+    
+</script>
+</html>

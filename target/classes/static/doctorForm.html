@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+
+
+    <div>
+        <h1>register doctor</h1>
+        <input type="text" id="name-doctor" name="name" placeholder="enter your name"><br>
+        <input type="text" id="password-doctor" name="password" placeholder="enter your password"><br>
+        <p>spec id:</p>
+        <select id="spec" name="spec">
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+        </select><br>
+        <input type="text" id="number" name="number" placeholder="enter your number"><br>
+        <p>online-pay:</p>
+        <select name="online-pay" id="online-pay">
+            <option value="true">false</option>
+            <option value="false">true</option>
+        </select><br>
+
+        <input type="text" id="experience" name="number" placeholder="enter your experience year"><br>
+        <input type="text" id="address" name="address" placeholder="enter your address"><br>
+        <input type="text" id="phone-number-doctor" name="phone" placeholder="enter your phone number"><br>
+        <input class="day" type="checkbox" id="sat" name="day" value="sat">
+        <label for="sat">saturday</label><br>
+        <input class="day" type="checkbox" id="sun" name="day" value="sun">
+        <label for="sun">sunday</label><br>
+        <input class="day" type="checkbox" id="mon" name="day" value="mon">
+        <label for="mon">monday</label><br>
+        <input class="day" type="checkbox" id="tue" name="day" value="tue">
+        <label for="tue">tuesday</label><br>
+        <input class="day" type="checkbox" id="wed" name="day" value="wed">
+        <label for="wed">wednesday</label><br>
+        <input class="day" type="checkbox" id="thur" name="day" value="thur">
+        <label for="thur">thursday</label><br>
+        <input class="day" type="checkbox" id="fri" name="day" value="fri">
+        <label for="fri">friday</label><br>
+        <input onclick="register_doctor()" type="submit" value="Submit-doctor">
+        <p><span id="reg-doctor"></span></p>
+    </div>
+
+
+    <div>
+        <h1>login</h1>
+        <input type="text" id="name2" name="name" placeholder="enter your name"><br>
+        <input type="text" id="password2" name="password" placeholder="enter your password"><br>
+        <input onclick="login_doctor()" type="submit" value="Submit-doctor">
+        <p><span id="doc"></span></p>
+    </div>
+
+
+    <script>
+        function httpGet(theUrl)  // ??? ???? ??????? ??
+        {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+            xmlHttp.send( null );
+            return xmlHttp.responseText;
+        }
+
+        function httpPost(theUrl , data) {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open( "POST", theUrl, false ); // false for synchronous request
+            xmlHttp.send( data );
+            return xmlHttp.responseText;
+        }
+        function register_doctor() {
+            var name = document.getElementById("name-doctor").value;
+            var pass = document.getElementById("password-doctor").value;
+            var spec = document.getElementById("spec").value;
+            var number = document.getElementById("number").value;
+            // var number = parseInt(num);
+            var online_pay = document.getElementById("online-pay").value;
+            // var online_pay =  (online === 'true');
+            var experience = document.getElementById("experience").value;
+            // var experience = parseInt(ex);
+            var address = document.getElementById("address").value;
+            var phone_number = document.getElementById("phone-number-doctor").value;
+            // var phone_number = parseInt(phone_num);
+            var inputElements = document.getElementsByClassName('day');
+            var checkedValue = [];
+            for (var m = 0 ; m < 7 ; m++){
+                checkedValue.push(inputElements[m].checked);
+            }
+            var json_arr = JSON.stringify(checkedValue);
+            var data = new FormData();
+            data.append('name', name);
+            data.append('password', pass);
+
+            data.append('spec', spec);
+            data.append('number', number);
+            data.append('onlinePay', online_pay);
+            data.append('experience', experience );
+            data.append('address', address );
+            data.append('phone', phone_number);
+            data.append('days',json_arr);
+            var result= httpPost("http://localhost:8080/rest/register-doctor" , data);//data
+            document.getElementById("doc").innerHTML = result;
+        }
+        function login_doctor() {
+            var name = document.getElementById("name2").value;
+            var pass = document.getElementById("password2").value;
+            var data = new FormData();
+            data.append('name', name);
+            data.append('password', pass);
+            var result= httpPost("http://localhost:8080/rest/login-doctor" , data);
+            if (result === 'true') {
+                localStorage.setItem('name', name)
+                localStorage.setItem('type', 'doctor')
+                window.open('http://localhost:8080/hello.html', '_self');
+            }
+            else
+                document.getElementById("doc").innerHTML = result;
+
+        }
+
+
+    </script>
+</body>
+</html>

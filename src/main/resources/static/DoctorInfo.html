@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+
+    <!--<form  target="_self" action="/rest/login" METHOD="post">-->
+    <div>
+        <h1>user information</h1>
+        <p>name : <span id="name"></span></p>
+        <p>phone : <span id="phone"></span></p>
+        <p>number : <span id="number"></span></p>
+        <p>spec : <span id="spec"></span></p>
+        <p>experience : <span id="experience"></span></p>
+        <p>online-pay : <span id="online-pay"></span></p>
+        <p>address : <span id="address"></span></p>
+        <p>week-days : <span id="week-days"></span></p>
+        <p>comments : <span id="comment"></span></p>
+        <p>reservations : <span id="reserve"></span></p>
+    </div>
+
+    <div>
+        <button type="submit" onclick='homePage()'>?????? ?? ???? ????</button>
+    </div>
+    <script>
+
+        user = localStorage.getItem('name')
+        document.getElementById("name").innerHTML = user;
+
+        function httpGet(theUrl)  // ??? ???? ??????? ??
+        {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+            xmlHttp.send( null );
+            return xmlHttp.responseText;
+        }
+
+        function httpPost(theUrl , data) {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open( "POST", theUrl, false ); // false for synchronous request
+            xmlHttp.send( data );
+            return xmlHttp.responseText;
+        }
+        var info = httpPost("http://localhost:8080/rest/get-doctor-info/"+user , '')
+        // window.alert(info);
+        var infoObj = JSON.parse(info);
+
+        document.getElementById("phone").innerHTML = infoObj.phone;
+        document.getElementById("comment").innerHTML = JSON.stringify(infoObj.comments);//infoObj.comments;
+        document.getElementById("reserve").innerHTML = JSON.stringify(infoObj.reservations);//infoObj.reservations;
+        document.getElementById("online-pay").innerHTML = infoObj.online_pay;
+        document.getElementById("spec").innerHTML = infoObj.spec;
+        document.getElementById("number").innerHTML = infoObj.number;
+        document.getElementById("address").innerHTML = infoObj.address;
+        document.getElementById("experience").innerHTML = infoObj.experience_years;
+        document.getElementById("week-days").innerHTML = infoObj.week_days;
+
+    </script>
+
+</body>
+</html>

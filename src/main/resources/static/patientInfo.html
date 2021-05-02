@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+
+<!--<form  target="_self" action="/rest/login" METHOD="post">-->
+<div>
+<h1>user information</h1>
+<p>name : <span id="name"></span></p>
+<p>phone number : <span id="phone"></span></p>
+</div>
+
+    <div>
+        <h2>editing</h2>
+        <input type="text" id="name-edit" name="name" placeholder="new name">
+        <input onclick="editName()" type="submit" value="Submit"><br>
+        <input type="text" id="password-edit" name="password" placeholder="new password">
+        <input onclick="editPass()" type="submit" value="Submit"><br>
+        <input type="text" id="phone-number-edit" name="phone" placeholder="new phone number">
+        <input onclick="editPhone()" type="submit" value="Submit"><br>
+    </div>
+<div>
+    <button type="submit" onclick='homePage()'>back to home page</button>
+</div>
+<script>
+
+    user = localStorage.getItem('name')
+    document.getElementById("name").innerHTML = user;
+
+    function httpGet(theUrl)  // متد برای درخواست گت
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+        xmlHttp.send( null );
+        return xmlHttp.responseText;
+    }
+
+    function httpPost(theUrl , data) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "POST", theUrl, false ); // false for synchronous request
+        xmlHttp.send( data );
+        return xmlHttp.responseText;
+    }
+    var info = httpPost("http://localhost:8080/rest/get-info/"+user , '')
+    window.alert(info)
+    var infoObj = JSON.parse(info)
+    document.getElementById("name").innerHTML = infoObj.name;
+    document.getElementById("phone").innerHTML = infoObj.phone;
+
+    function editName() {
+        var newName = document.getElementById("name-edit").value
+        // window.alert(newName)
+        httpPost("http://localhost:8080/rest/edit-name/"+user+"/"+newName , '')
+        user = newName;
+        localStorage.setItem('name' , newName);
+
+    }
+    function editPass() {
+        var newPass = document.getElementById("password-edit").value
+        httpPost("http://localhost:8080/rest/edit-pass/"+user+"/"+newPass , '')
+    }
+    function editPhone() {
+        var newPhone = document.getElementById("phone-number-edit").value
+        httpPost("http://localhost:8080/rest/edit-phone/"+user+"/"+ newPhone , '')
+    }
+
+    function homePage() {
+        window.open('http://localhost:8080/hello.html', '_self');
+    }
+</script>
+
+</body>
+</html>

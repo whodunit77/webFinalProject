@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta  name="viewport" content="width=device-width"  http-equiv="Content-Type" content="text/html; charset=utf-8  " , initial-scale=1 />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+* {box-sizing: border-box;}
+
+    body { 
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* -----------------------------------------------------------------*/
+/*
+    .header {
+    overflow: hidden;
+    margin: auto;
+    height: 100px;
+    width: 55%;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 16px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header img.logo {
+  font-size: 25px;
+    float: right;
+}
+
+.header a:hover {
+  color: orange;
+}
+    
+
+.header-options {
+   padding-top: 20px;
+  float: right;
+}
+    
+.header-enter a:hover{
+        color: red;
+    }
+.header-enter a{
+        float: left;
+        background-color: gainsboro;
+        color: blue;
+        margin-top: 20px;
+}
+*/
+    
+     body { 
+        margin: 0;
+      font-family: myFirstFont;
+}
+
+    .header {
+/*    وسط صفحه*/
+    margin: auto;       
+    height: 100px;
+    width: 55%;
+    padding: 20px 10px;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 15px;
+/*    برداشتن خط زی لینک*/
+    text-decoration: none;
+    font-size: 12px; 
+    line-height: 25px;
+/*    گرد شدن دور محتوا*/
+    border-radius: 4px;
+    margin-top: 0px;
+  
+}
+    
+/*اطلاعات مربوط به ایکن    */
+.header svg{
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    
+/*    لوگو درمانکده*/
+.header img.logo {
+    font-size: 25px;
+    float: right;
+}
+
+.header a:hover {
+  color: #fb815e;;
+}
+    
+
+.header-options {
+   padding-top: 20px;
+  float: right;
+}
+ 
+.header-enter a:hover{
+        color: red;
+        
+    }
+.header-enter a{
+   
+        background-color: gainsboro;
+        font-size: 16px;
+    width: 110px;
+    height: 50px;
+        color: blue;
+       margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: .25rem!important;
+}
+    
+  .header  .header-enter svg{
+/*      چرخش ۱۸۰ دزجه ایکن*/
+        transform: rotate(180deg);    
+/*      راست چین*/
+        direction: rtl;
+   font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+      float: left;
+      
+    }   
+    
+    
+    /* ---------------------------------------------------------------*/
+    
+    .top-image{
+         overflow: hidden;
+        margin: auto;
+        height: auto;
+        width: 55%;
+        margin-bottom: 30px;
+    }
+    .top img{
+        width: 100%;
+        height: auto;
+    }
+    .middle{
+         height: 620px;
+        width: 55%;
+        margin: auto;
+    }
+    
+    .middle .right{
+/*        display: inline-block;*/
+        width: 25%;
+        height: 620px;
+/*        float: left;*/
+        border: solid 1px #e2e8f0;
+        border-radius: 5px;
+         float: right;
+/*        background-color: rebeccapurple;*/
+
+    }
+     .middle .right .top{
+        width: 100%;
+        height: 70px;
+         border-bottom: solid 1px #e2e8f0;
+    }
+    .middle .right .top .all{
+        width: 100%;
+        height: 60%;
+         padding-top: 0px;
+        text-align: right;
+        padding-right: 10px;
+        float: left;
+        margin-top: -5px;
+    }
+    .middle .right .top .alephba{
+         width: 100%;
+        height: 40%;
+    }
+
+    .middle .right .top .all svg{
+/*        margin-top: -20px;*/
+        width: 20px;
+        float: right;
+        margin-left: 10px;
+    }
+    .middle .right .top .alephba p{
+        font-size: 11px;
+        float: right;
+        padding-right: 8px;
+        margin-top: 0px;
+    }
+  
+     
+    
+    #center{
+        height: 83%;
+/*        overflow: auto;*/
+        width: 100%;
+        text-align: right;
+/*        padding-bottom: 0px;*/
+    }
+    
+    #center  .scrollbar .search-bar{
+    
+        height: 35px;
+        width: 90%;
+        margin: auto;
+      border: 1px solid #e2e8f0;
+         border-radius: 10px;
+    }
+    
+    #center  .scrollbar .search-bar .example{
+        width: 100%;
+  
+        margin: auto;
+    
+           
+          
+                
+    }
+    form.example input[type=text] {
+        height: 30px;
+  padding: 10px;
+  font-size: 12px;
+    direction: rtl;
+/*        padding-right: 5px;*/
+  border: 1px solid white;
+  float: left;
+  width: 80%;
+/*  background: #f1f1f1;*/
+        border-radius: 10px;
+}
+
+/* Style the submit button */
+form.example button {
+     border-radius: 10px;
+/*    color: #2196F3;*/
+     height: 30px;
+  float: left;
+  width: 20%;
+  padding: 10px;
+    border: 1px solid white;  
+    padding-top: 5px;
+/*  background: #2196F3;*/
+  background-color: white;
+  font-size: 17px;
+/*  border: 1px solid grey;*/
+
+/*  border-left: none;  Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+/*  background: #0b7dda;*/
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    #center .scrollbar{
+        margin-top: 10px;
+          height: 99%;;
+        overflow: auto;
+         direction: rtl;
+        width: 97%;
+        float: right;
+    }
+    #center .scrollbar .harf{
+        width: 100%;
+        height: 40px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #center .scrollbar .harf p{
+        width: 40px;
+        float: right;
+        padding-right: 7px;
+        padding-top: 3px;
+        margin-top: 10px;
+        
+        height: 30px;
+        background:  lightblue;
+        border-radius: 5px;
+/*        float: right;*/
+    }
+    
+    #center .scrollbar a{
+        text-decoration: none;
+        color: #6e7794;
+        font-size: 14px;
+    }
+    
+   #center .scrollbar li{
+        list-style-type: none; 
+    }
+
+    #end{
+        height: 33px;
+        width: 100%;
+        background-color:  lightblue;
+        
+    }
+    
+    #end p{
+        font-size: 12px;
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 0px;
+        border-radius: 5px;
+    }
+    #end i{
+        padding-right: 5px;
+    }
+    
+    
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray; 
+}
+    
+    
+ 
+    .middle .left{
+        width: 75%;
+        height: auto;
+        float: left;
+    }  
+    .middle .right .bottom{
+        width: 100%;
+        height: 700px;        
+    }
+    .middle .left .row{
+        width: 100%;
+    }
+    .middle .left div{
+         display: inline-block;
+    }
+    .middle .left .row .block{
+        
+        width: 30%;
+        height: 200px; 
+        border: 1px solid #e2e8f0;
+        border-radius: 5px;
+    }
+    .middle .left .row .block .top{
+        height: 45px;   
+        width: 100%;
+         white-space: nowrap;
+
+    }
+    .middle .left .row .block .top .image{
+        margin-top: 2px;
+        margin-right: 3px;
+        width: 18%;
+        float: right;
+        height: auto;
+        margin-left: 30px;
+    }
+    .middle .left .row .block .top .image img{
+        height: 40px;
+        width: 40px;
+    }
+    .middle .left .row .block .top .titr{
+        width: 30%;
+        float: right;
+        margin-right: 13px;
+        margin-top: 10px;
+        color: #3b4157;
+            font-size: 16px!important;
+        font-weight: bold;
+    }
+    .middle .left .row .block .center{
+        height: 100px;
+        width: 100%;
+        text-align: right;
+        padding-right: 10px;
+        font-size: 12px;
+/*        background-color: red;*/
+        color: #6e7794;
+    }
+    .middle .left .row .block .bottom{
+        height: 50px;
+        width: 100%;   
+         white-space: nowrap;
+    }
+    .middle .left .row .block .bottom .pics{
+        width: 23%;
+        float: right;
+        height: 90%;
+        margin-top: 8px;
+        margin-right: 20px;
+        margin-left: 40px;
+    }
+    .middle .left .row .block .bottom .moshahede{
+        width: 40%;
+        float: right;
+        height: 80%;
+        
+        margin-top: 8px;
+    }
+    .middle .left .row .block .bottom .moshahede form{
+        height: 90%;
+    }
+    
+    .middle .left .row .block .bottom .moshahede button[type=submit]{
+        width: 90%;
+        height: 80%;
+        border-radius: 8px;
+        color: orangered;
+        border: 1px solid orangered;
+    } 
+    .middle .left .row .block .bottom  .pics img{
+        width: 20px;
+        height: 18px;
+        margin-right: -10px;
+    }
+    .middle .left .row .block .bottom  .pics p{
+        margin-top: -2px;   
+        font-size: 10px;
+        height: 2px;
+        color: black;
+    }
+    
+    
+    .end{
+        
+        width: 100%;
+        height: 160px;
+        background-color: #1780df;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .end div{
+        display: inline-block;
+    }
+    .end .right{
+        color: white;
+        width: 30%;
+        height: 90%;
+        float: right;
+/*        background-color: red;*/
+    }
+      .end .middle{
+          padding-right: 20px;
+        width: 30%;
+        height: 90%;
+        float: right;
+/*        background-color: black;*/
+    }
+    
+  
+    .end .right .container{
+        width: 70%;
+    float: right;
+        padding-right: 100px;
+       
+    
+    }
+
+    .end .right .container p{
+        direction: rtl;
+    }
+    .end .right .container img{
+        padding-top: 20px;
+        float: right;
+        width: 20%;
+    }
+    
+    
+    .end .middle .right{
+        padding-top: 20px;
+        width: 48%;
+/*        background-color: black;*/
+        border: none;
+    }
+    .end .middle .left{
+          padding-top: 20px;
+        margin-left: 20px;
+        
+        
+        width: 48%;
+    }
+    .end .middle a{
+        text-decoration: none;
+    }
+    
+      .end .middle li{
+          
+        padding: 10px 0;
+        border-top: 1px solid #fff;
+        color: white;
+        direction: rtl;
+        text-align: center;
+        display: list-item;
+        font-size: 12px;
+              list-style-type: none; 
+    }
+     .end .middle li:hover{
+        background-color: white;
+        color:  #1780df;
+    }
+    
+    
+    .end .leftpart{
+         width: 38%;
+        height: 99%;
+        padding-top: 20px;
+        padding-left: 100px;
+        float: right;
+     
+/*         background-color: red;*/
+    }
+    
+    .end .leftpart div{
+        display: inline-block;
+    }
+           
+    .end .leftpart .pics{
+    
+       height: 130px;
+        float: right;
+        width: 60%;
+        margin: auto;
+        margin-top: 10px;
+/*        background-color: black;*/
+       
+    }
+    .end .leftpart .pics img{
+        margin-left: 10px;
+         background-color: lightgray;
+        border-radius: 10px;
+        height: 100px;
+        width: 100px;
+    }
+    .end .leftpart .social{
+        
+        height: 80px;
+/*           background-color: red;*/
+        padding-top: 50px;
+        padding-left: 40px;
+        width: 40%;
+        
+    }
+    
+    .end .leftpart .social a{
+       
+        width: 25px;
+        height: 25px;
+        margin: 10px;
+        color: white;
+    }
+    .end .leftpart .social i{
+        padding-left: 15px;
+/*        background-color: rebeccapurple;*/
+    }
+/*
+    .end .leftpart .social div{
+        display: inline-block;
+    }
+    
+*/
+    
+    </style>
+ </head>
+<body>
+    
+<!--
+<div class="header">
+    <img class="logo" src="darmankade.svg" alt="Girl in a jacket">
+    <div class="header-options">
+        <a  href="#home">مجله پزشکی<i class="fa fa-window-maximize"></i></a>
+        <a href="#contact">مشاور انلاین<i class="fa fa-rss"></i></a>
+        <a href="#contact">عضویت پزشکان<i class="fa fa-rss"></i></a>
+        <a href="#contact">کرونا سازمانی<i class="fa fa-rss"></i></a>
+        <a href="#contact">لیست تخصص ها<i class="fa fa-rss"></i></a>
+    </div>
+    <div class="header-enter">
+            <a href="#contact"><i class="fa fa-rss">ورود</i></a>
+    </div>
+</div>
+    
+-->
+<div class="header">
+    <img class="logo" src="darmankade.svg" alt="Girl in a jacket">
+    <div class="header-options">
+        <a  href="#home">مجله پزشکی<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="dr-menu__icon feather feather-book" data-v-49015c94=""><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" data-v-49015c94=""></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" data-v-49015c94=""></path></svg></a>
+        <a href="#contact">مشاور انلاین<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-0 dr-menu__icon feather feather-wifi" data-v-49015c94=""><path d="M5 12.55a11 11 0 0 1 14.08 0" data-v-49015c94=""></path><path d="M1.42 9a16 16 0 0 1 21.16 0" data-v-49015c94=""></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0" data-v-49015c94=""></path><line x1="12" y1="20" x2="12" y2="20" data-v-49015c94=""></line></svg></a>
+        <a href="#contact">عضویت پزشکان<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="dr-menu__icon feather feather-user-plus" data-v-49015c94=""><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" data-v-49015c94=""></path><circle cx="8.5" cy="7" r="4" data-v-49015c94=""></circle><line x1="20" y1="8" x2="20" y2="14" data-v-49015c94=""></line><line x1="23" y1="11" x2="17" y2="11" data-v-49015c94=""></line></svg></a>
+        <a href="#contact">کرونا سازمانی<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="dr-menu__icon feather feather-box" data-v-49015c94=""><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" data-v-49015c94=""></path><polyline points="3.27 6.96 12 12.01 20.73 6.96" data-v-49015c94=""></polyline><line x1="12" y1="22.08" x2="12" y2="12" data-v-49015c94=""></line></svg></a>
+        <a href="#contact">لیست تخصص ها <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-0 dr-menu__icon feather feather-align-justify" data-v-49015c94=""><line x1="21" y1="10" x2="3" y2="10" data-v-49015c94=""></line><line x1="21" y1="6" x2="3" y2="6" data-v-49015c94=""></line><line x1="21" y1="14" x2="3" y2="14" data-v-49015c94=""></line><line x1="21" y1="18" x2="3" y2="18" data-v-49015c94=""></line></svg></a>
+    </div>
+    <div class="header-enter">
+            <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flip-horizontal feather feather-log-in" data-v-0fb0a4cb=""><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" data-v-0fb0a4cb=""></path><polyline points="10 17 15 12 10 7" data-v-0fb0a4cb=""></polyline><line x1="15" y1="12" x2="3" y2="12" data-v-0fb0a4cb=""></line></svg> ورود </a>
+    </div>
+</div>
+            
+    
+
+<div class="top-image">
+      <img class="image" src="top-2.png" alt="top">
+</div>
+    
+<div class="middle"> 
+    <div class="right">
+        <div class="top">
+            <div class="all">
+                <h4 class="titr">همه تخصص ها
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-3 text-slate feather feather-align-right" data-v-7b524330=""><line x1="21" y1="10" x2="7" y2="10" data-v-7b524330=""></line><line x1="21" y1="6" x2="3" y2="6" data-v-7b524330=""></line><line x1="21" y1="14" x2="3" y2="14" data-v-7b524330=""></line><line x1="21" y1="18" x2="7" y2="18" data-v-7b524330=""></line></svg>
+                </h4>
+            </div>
+            <div class="alephba">
+                <p>(به ترتیب حروف الفبا)</p>
+            </div>
+        </div>
+        <div id="center">
+            
+            <div class="scrollbar">
+                <div class="search-bar">
+<!--                 The form -->
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="تخصص مورد نظر خود را جست و جو کنید" name="search">
+                        <button type="submit"><i class="fa fa-search" style="color: #0b7dda" ></i></button>
+                    </form>
+                </div>
+                <div class="harf">
+                    <p>الف</p>
+                </div>
+                <ul>
+                    <a href="#contact"><li>ارتوپدی</li></a><br>
+                    <a href="#contact"><li>ارتوپدی کودکان</li></a><br>
+                    <a href="#contact"><li>ارتوز و پروتز(ارتوپدی فنی)</li></a><br>
+                    <a href="#contact"><li>استروتاکسی و فانکشنال مغز و اعصاب</li></a><br>
+                    <a href="#contact"><li>آسم آلرژی و ایمونولوژی</li></a><br>
+                    <a href="#contact"><li>اکوکاردیوگرافی</li></a><br>
+                    <a href="#contact"> <li>اندرولوژی و لاپاراسکوپی</li></a><br>
+                </ul>       
+              <div class="harf">
+                  <p>ب</p>
+                </div>
+                <ul>
+                    <a href="#contact"><li>بالون آنژیوپلاستی</li></a><br>
+                    <a href="#contact"><li>بالون آنژیوپلاستی و والوپلاستی</li></a><br>
+                </ul>
+            
+              <div class="harf"><p>ج</p>
+                </div>
+            <ul>
+             <a href="#contact"><li>جراح کلیه و مجاری ادراری(اورولوژی)</li></a><br>
+             <a href="#contact"><li>جراحی بیماری های مادرزادی قلب</li></a><br>
+             <a href="#contact"><li>جراحی پستان</li></a><br>
+             <a href="#contact"><li>جراحی پلاستیک و زیبایی</li></a><br>
+
+            </ul>
+         
+            </div>
+        </div>
+        <div id="end">
+            <p><i class="fa fa-rss"></i>اسکرول کنید</p>
+        </div>
+      
+    </div>
+    <div class=left>
+        <div class="row">
+            <div class="block">
+                <div class="top">
+                    <div class="image">
+                      <img class="image" src="ghush.svg" alt="kabed">
+                     </div>
+                    <div class="titr" >گوش حلق بینی</div>
+                </div>
+                <div class="center">
+                    <p>
+                       پزشکی که در زمینه تشخیص، مراقبت‌های پزشکی، جراحی و درمان بیمارانی که دچار اختلالات گوش، بینی، دهان، گلو، ...
+                    </p>
+                
+                </div>
+                <div class="bottom">
+                    <div class="pics">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                        <p>۲۰۴+ پزشک</p>
+                    </div>
+                    
+                    <div class="moshahede">
+                        <form method="get" action="doctors.html">
+                         <button class="comment" type="submit" id="16" onclick="moveToDoctor(this)">  مشاهده ></button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+            
+            <div class="top">
+                    <div class="image">
+                      <img class="image" src="ghodad.svg" alt="kabed"></div>
+                    <div class="titr" >ارتوپدی</div>
+                </div>
+                <div class="center">
+                    <p>
+                        متخصص غدد و متابولیسم پزشکی است که بیماری‌های هورمونی را به طور کامل مطالعه کرده و بهترین درمان‌های ممکن ...
+
+
+                    </p>
+                
+                </div>
+                <div class="bottom">
+                    <div class="pics">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                        <p>۲۰۴+ پزشک</p>
+                    </div>
+                    
+                    <div class="moshahede">
+                         <form method="get" action="doctors.html">
+                         <button class="comment" type="submit" id="11" onclick="moveToDoctor(this)">  مشاهده ></button>
+                            </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+            <div class="top">
+                    <div class="image">
+                      <img class="image" src="kabed.svg" alt="kabed">
+                     </div>
+                    <div class="titr">
+                        ارولوژی</div>
+                </div>
+                <div class="center">
+                    <p>
+                        متخصص گوارش، کبد و آندوسکوپی پزشکی که بر سلامت گوارش تمرکز دارد و در زمینه تشخیص، ارزیابی و درمان اختلالا ...
+
+
+                    </p>
+                
+                </div>
+                <div class="bottom">
+                    <div class="pics">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                        <p>۲۰۴+ پزشک</p>
+                    </div>
+                    
+                    <div class="moshahede">
+                       <form method="get" action="doctors.html">
+                         <button class="comment" type="submit" id="12" onclick="moveToDoctor(this)">  مشاهده ></button>
+                            </form>
+
+
+                    </div>
+                </div></div>
+            
+        </div>
+        <div class="row">
+         <div class="block">
+            <div class="top">
+                    <div class="image">
+                      <img class="image" src="kabed.svg" alt="kabed">
+                     </div>
+                    <div class="titr">
+                        کبد و گوارش
+                    </div>
+                </div>
+                <div class="center">
+                    <p>
+                        سندیبنتلیبلنستیبلینبدلسیبل <br> سبلسیبلدنویسبلسی
+                    </p>
+                
+                </div>
+                <div class="bottom">
+                    <div class="pics">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                        <p>۲۰۴+ پزشک</p>
+                    </div>
+                    
+                    <div class="moshahede">
+                           <form method="get" action="doctors.html">
+                         <button class="comment" type="submit" >  مشاهده ></button>
+                            </form>
+
+                    </div>
+                </div></div>
+            <div class="block">
+            <div class="top">
+                    <div class="image">
+                      <img class="image" src="kabed.svg" alt="kabed">
+                     </div>
+                    <div class="titr">
+                        کبد و گوارش
+                    </div>
+                </div>
+                <div class="center">
+                    <p>
+                        سندیبنتلیبلنستیبلینبدلسیبل <br> سبلسیبلدنویسبلسی
+                    </p>
+                
+                </div>
+                <div class="bottom">
+                    <div class="pics">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                        <p>۲۰۴+ پزشک</p>
+                    </div>
+                    
+                    <div class="moshahede">
+                           <form method="get" action="doctors.html">
+                         <button class="comment" type="submit" >  مشاهده ></button>
+                            </form>
+
+                    </div>
+                </div></div>
+            <div class="block"><div class="top">
+                    <div class="image">
+                      <img class="image" src="kabed.svg" alt="kabed">
+                     </div>
+                    <div class="titr">
+                        کبد و گوارش
+                    </div>
+                </div>
+                <div class="center">
+                    <p>
+                        سندیبنتلیبلنستیبلینبدلسیبل <br> سبلسیبلدنویسبلسی
+                    </p>
+                
+                </div>
+                <div class="bottom">
+                    <div class="pics">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                        <p>۲۰۴+ پزشک</p>
+                    </div>
+                    
+                    <div class="moshahede">
+                            <form method="get" action="doctors.html">
+                         <button class="comment" type="submit" >  مشاهده ></button>
+                            </form>
+
+                    </div>
+                </div></div>
+        </div>
+        
+        <div class="row">
+         <div class="block"><div class="top">
+                    <div class="image">
+                      <img class="image" src="kabed.svg" alt="kabed">
+                     </div>
+                    <div class="titr">
+                        کبد و گوارش
+                    </div>
+                </div>
+                <div class="center">
+                    <p>
+                        سندیبنتلیبلنستیبلینبدلسیبل <br> سبلسیبلدنویسبلسی
+                    </p>
+                
+                </div>
+                <div class="bottom">
+                    <div class="pics">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                        <p>۲۰۴+ پزشک</p>
+                    </div>
+                    
+                    <div class="moshahede">
+                           <form method="get" action="doctors.html">
+                         <button class="comment" type="submit" >  مشاهده ></button>
+                            </form>
+
+                    </div>
+                </div></div>
+            <div class="block">
+            <div class="top">
+                    <div class="image">
+                      <img class="image" src="kabed.svg" alt="kabed">
+                     </div>
+                    <div class="titr">
+                        کبد و گوارش
+                    </div>
+                </div>
+                <div class="center">
+                    <p>
+                        سندیبنتلیبلنستیبلینبدلسیبل <br> سبلسیبلدنویسبلسی
+                    </p>
+                
+                </div>
+                <div class="bottom">
+                    <div class="pics">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                        <p>۲۰۴+ پزشک</p>
+                    </div>
+                    
+                    <div class="moshahede">
+                           <form method="get" action="doctors.html">
+                         <button class="comment" type="submit" >  مشاهده ></button>
+                            </form>
+
+                    </div>
+                </div></div>
+            <div class="block"><div class="top">
+                    <div class="image">
+                      <img class="image" src="kabed.svg" alt="kabed">
+                     </div>
+                    <div class="titr">
+                        کبد و گوارش
+                    </div>
+                </div>
+                <div class="center">
+                    <p>
+                        سندیبنتلیبلنستیبلینبدلسیبل <br> سبلسیبلدنویسبلسی
+                    </p>
+                
+                </div>
+                <div class="bottom">
+                    <div class="pics">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                         <img class="image" src="doctor.png" alt="kabed">
+                        <p>۲۰۴+ پزشک</p>
+                    </div>
+                    
+                    <div class="moshahede">
+                          <form method="get" action="doctors.html">
+                         <button class="comment" type="submit" >  مشاهده ></button>
+                            </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    
+<div class="end">
+    <div class="right">
+         <div class="container">
+               <img src="darmankade2.svg" alt="darman">
+           
+        </div>
+        <div class="container">
+            <p>درمانکده، ارائه دهنده خدمات آنلاین سلامت
+            (نوبت گیری اینترنتی، مشاوره آنلاین، آزمایش در محل و ...)</p>
+        </div>
+    </div>
+    
+    <div class="middle">
+      <div class="left">
+            <ul>
+                <a href="#contact"> <li>سوالات متداول</li></a>
+                <a href="#contact"><li>قوانین و مقررات</li></a>
+                <a href="#contact"><li>شکایت</li></a>
+            </ul>
+        </div>
+        
+        
+        <div class="right">
+            <ul>
+                <a href="#contact"><li>درباره درمانکده</li></a>
+                <a href="#contact"><li>تماس با ما</li></a>
+                <a href="#contact"><li>مجله پزشکی</li></a>
+            </ul>
+        </div>
+    
+    </div>
+    
+    <div class="leftpart">
+        <div class="pics">
+            <img src="right.png" alt="right">
+            <img src="left.png" alt="left">
+        
+        </div>
+      <div class="social">
+          <a href="#contact"><i class="fa fa-instagram" style="font-size:26px"></i></a>
+          <a href="#contact"><i class="fa fa-instagram" style="font-size:26px"></i></a>
+          <a href="#contact"><i class="fa fa-instagram" style="font-size:26px"></i></a>
+<!--
+             <div class="simple">
+                 <a href="#contact"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+            </div>
+            <div class="line">
+                <a href="#contact"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+                    <div class="vl"></div>
+            </div>
+             <div class="simple">
+                 <a href="#contact"><i class="fa fa-instagram" style="font-size:36px"></i></a>  
+-->
+            </div>
+        </div>
+</div>
+<script>
+
+    function moveToDoctor(x) {
+
+        // window.alert(x.id);
+        localStorage.setItem('specId' , x.id);
+        window.open('http://localhost:8080/doctors.html', '_self');
+    }
+
+</script>
+   
+</body>
+</html>
+
